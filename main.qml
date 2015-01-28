@@ -12,6 +12,7 @@ Rectangle {
         font.pointSize: 14
         anchors.centerIn: parent
         PropertyAnimation {
+
             id: animation
             target: text
             property: "rotation"

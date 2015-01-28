@@ -12,10 +12,13 @@ MainWindow::MainWindow(QWidget *parent) :
 
     QQuickView *view = new QQuickView();
     QWidget *container = QWidget::createWindowContainer(view, this);
+
     container->setMinimumSize(200, 200);
     container->setMaximumSize(200, 200);
     container->setFocusPolicy(Qt::TabFocus);
+
     view->setSource(QUrl("qrc:/main.qml"));
+
     ui->verticalLayout->addWidget(container);
 }
 
